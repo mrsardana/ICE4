@@ -11,7 +11,8 @@ class GameViewController: UIViewController
     @IBOutlet weak var ScoreLabel: UILabel!
     @IBOutlet weak var StartLabel: UILabel!
     @IBOutlet weak var StartButton: UIButton!
-    
+    @IBOutlet weak var EndLabel: UILabel!
+    @IBOutlet weak var RestartButton: UIButton!
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -60,12 +61,20 @@ class GameViewController: UIViewController
         LivesLabel.isHidden = true
         StartLabel.isHidden = false
         StartButton.isHidden = false
+        RestartButton.isHidden = true
+        EndLabel.isHidden = true
         setScene(sceneName: "StartScene")
     }
     
     func presentEndScene()
     {
-        
+        ScoreLabel.isHidden = true
+        LivesLabel.isHidden = true
+        StartLabel.isHidden = true
+        StartButton.isHidden = true
+        RestartButton.isHidden = false
+        EndLabel.isHidden = false
+        setScene(sceneName: "EndScene")
     }
     
     @IBAction func StartButton_Pressed(_ sender: UIButton)
@@ -74,7 +83,6 @@ class GameViewController: UIViewController
         LivesLabel.isHidden = false
         StartLabel.isHidden = true
         StartButton.isHidden = true
-        
         // Initialize the lives and score
         ScoreManager.Score = 0
         ScoreManager.Lives = 5
@@ -83,5 +91,22 @@ class GameViewController: UIViewController
         
         setScene(sceneName: "GameScene")
         
+    }
+    
+    
+    @IBAction func RestartButton_Pressed(_ sender: UIButton)
+    {
+        RestartButton.isHidden = true
+        EndLabel.isHidden = true
+        ScoreLabel.isHidden = false
+        LivesLabel.isHidden = false
+        
+        // Initialize the lives and score
+        ScoreManager.Score = 0
+        ScoreManager.Lives = 5
+        updateLivesLabel()
+        updateScoreLabel()
+        
+        setScene(sceneName: "GameScene")
     }
 }

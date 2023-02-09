@@ -81,6 +81,8 @@
 		733AC40329956FF800BEC389 /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733AC40129956FF800BEC389 /* CollisionManager.swift */; };
 		733AC406299575D100BEC389 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 733AC405299575D100BEC389 /* StartScene.sks */; };
 		733AC4082995766500BEC389 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733AC4072995766500BEC389 /* StartScene.swift */; };
+		73CCFD6F2995855A003D6C64 /* EndScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CCFD6E2995855A003D6C64 /* EndScene.swift */; };
+		73CCFD7129958568003D6C64 /* EndScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 73CCFD7029958568003D6C64 /* EndScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,6 +162,8 @@
 		733AC405299575D100BEC389 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
 		733AC4072995766500BEC389 /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		733AC409299580BE00BEC389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		73CCFD6E2995855A003D6C64 /* EndScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScene.swift; sourceTree = "<group>"; };
+		73CCFD7029958568003D6C64 /* EndScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EndScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +343,8 @@
 				733AC36329956FCB00BEC389 /* GameScene.sks */,
 				733AC36729956FCB00BEC389 /* GameScene.swift */,
 				733AC4072995766500BEC389 /* StartScene.swift */,
+				73CCFD6E2995855A003D6C64 /* EndScene.swift */,
+				73CCFD7029958568003D6C64 /* EndScene.sks */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -409,6 +415,7 @@
 				733AC3C429956FE500BEC389 /* restartButton.png in Resources */,
 				733AC3E729956FE500BEC389 /* thunder.mp3 in Resources */,
 				733AC3D729956FE500BEC389 /* explosion2.png in Resources */,
+				73CCFD7129958568003D6C64 /* EndScene.sks in Resources */,
 				733AC3EA29956FE500BEC389 /* textureAtlas.json in Resources */,
 				733AC3BD29956FE500BEC389 /* island.png in Resources */,
 				733AC3D029956FE500BEC389 /* smallexplosion3.png in Resources */,
@@ -480,6 +487,7 @@
 				733AC3FD29956FF300BEC389 /* Ocean.swift in Sources */,
 				733AC3F529956FEE00BEC389 /* Layer.swift in Sources */,
 				733AC3FC29956FF300BEC389 /* Cloud.swift in Sources */,
+				73CCFD6F2995855A003D6C64 /* EndScene.swift in Sources */,
 				733AC4082995766500BEC389 /* StartScene.swift in Sources */,
 				733AC36229956FCB00BEC389 /* AppDelegate.swift in Sources */,
 				733AC3FE29956FF300BEC389 /* Player.swift in Sources */,
