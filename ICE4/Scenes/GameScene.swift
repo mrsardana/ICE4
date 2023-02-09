@@ -3,9 +3,6 @@ import GameplayKit
 import AVFoundation
 import UIKit
 
-let screenSize = UIScreen.main.bounds
-var screenWidth: CGFloat?
-var screenHeight: CGFloat?
 
 class GameScene: SKScene
 {
@@ -19,11 +16,7 @@ class GameScene: SKScene
     
     override func sceneDidLoad()
     {
-        screenWidth = frame.width
-        screenHeight = frame.height
-        print("Screen Width : \(String(describing: screenWidth))")
-        print("Screen Height : \(String(describing: screenHeight))")
-        
+
         name = "GAME"
         
         // add the first ocean to the Scene

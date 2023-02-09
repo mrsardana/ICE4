@@ -79,6 +79,8 @@
 		733AC3FE29956FF300BEC389 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733AC3FA29956FF300BEC389 /* Player.swift */; };
 		733AC40229956FF800BEC389 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733AC40029956FF800BEC389 /* ScoreManager.swift */; };
 		733AC40329956FF800BEC389 /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733AC40129956FF800BEC389 /* CollisionManager.swift */; };
+		733AC406299575D100BEC389 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 733AC405299575D100BEC389 /* StartScene.sks */; };
+		733AC4082995766500BEC389 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733AC4072995766500BEC389 /* StartScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -155,6 +157,9 @@
 		733AC3FA29956FF300BEC389 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		733AC40029956FF800BEC389 /* ScoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
 		733AC40129956FF800BEC389 /* CollisionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionManager.swift; sourceTree = "<group>"; };
+		733AC405299575D100BEC389 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
+		733AC4072995766500BEC389 /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		733AC409299580BE00BEC389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,13 +192,13 @@
 		733AC36029956FCB00BEC389 /* ICE4 */ = {
 			isa = PBXGroup;
 			children = (
+				733AC409299580BE00BEC389 /* Info.plist */,
+				733AC4042995756D00BEC389 /* Scenes */,
 				733AC3FF29956FF800BEC389 /* Managers */,
 				733AC3F629956FF300BEC389 /* GameObjects */,
 				733AC3EF29956FEE00BEC389 /* Core */,
 				733AC37A29956FE500BEC389 /* Assets */,
 				733AC36129956FCB00BEC389 /* AppDelegate.swift */,
-				733AC36329956FCB00BEC389 /* GameScene.sks */,
-				733AC36729956FCB00BEC389 /* GameScene.swift */,
 				733AC36929956FCB00BEC389 /* GameViewController.swift */,
 				733AC36B29956FCB00BEC389 /* Main.storyboard */,
 				733AC37029956FCC00BEC389 /* LaunchScreen.storyboard */,
@@ -327,6 +332,17 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		733AC4042995756D00BEC389 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				733AC405299575D100BEC389 /* StartScene.sks */,
+				733AC36329956FCB00BEC389 /* GameScene.sks */,
+				733AC36729956FCB00BEC389 /* GameScene.swift */,
+				733AC4072995766500BEC389 /* StartScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -426,6 +442,7 @@
 				733AC3D929956FE500BEC389 /* enemy2.png in Resources */,
 				733AC3C929956FE500BEC389 /* coin05.png in Resources */,
 				733AC3B729956FE500BEC389 /* bullet.png in Resources */,
+				733AC406299575D100BEC389 /* StartScene.sks in Resources */,
 				733AC3BF29956FE500BEC389 /* clickMeButton.png in Resources */,
 				733AC3C729956FE500BEC389 /* smallexplosion4.png in Resources */,
 				733AC36429956FCB00BEC389 /* GameScene.sks in Resources */,
@@ -463,6 +480,7 @@
 				733AC3FD29956FF300BEC389 /* Ocean.swift in Sources */,
 				733AC3F529956FEE00BEC389 /* Layer.swift in Sources */,
 				733AC3FC29956FF300BEC389 /* Cloud.swift in Sources */,
+				733AC4082995766500BEC389 /* StartScene.swift in Sources */,
 				733AC36229956FCB00BEC389 /* AppDelegate.swift in Sources */,
 				733AC3FE29956FF300BEC389 /* Player.swift in Sources */,
 				733AC40229956FF800BEC389 /* ScoreManager.swift in Sources */,
@@ -615,12 +633,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5GLSY64466;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ICE4/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mail Pilot";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.action-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -628,9 +649,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.ICE4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -643,12 +667,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5GLSY64466;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ICE4/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mail Pilot";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.action-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -656,9 +683,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.ICE4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
